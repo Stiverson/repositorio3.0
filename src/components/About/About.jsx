@@ -7,7 +7,15 @@ import PortfolioContext from '../../context/context';
 
 const About = () => {
   const { about } = useContext(PortfolioContext);
-  const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+  const {
+    img,
+    paragraphOne,
+    paragraphTwo,
+    paragraphThree,
+    paragraphFour,
+    paragraphFive,
+    resume,
+  } = about;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -25,7 +33,7 @@ const About = () => {
   return (
     <section id="about">
       <Container>
-        <Title title="About Me" />
+        <Title title="Sobre mim" />
         <Row className="about-wrapper">
           <Col md={6} sm={12}>
             <Fade bottom duration={1000} delay={600} distance="30px">
@@ -39,15 +47,25 @@ const About = () => {
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
                   {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'Stiverson Rodrigues Machado , Formado em Técnico para informática para internet Graduado em Análise e desenvolvimento de sistemas.'}
                 </p>
                 <p className="about-wrapper__info-text">
                   {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                    'Residente na cidade de Piracicaba-sp, grande amante de técnologia, principalmente na área de desenvolvimento, possuo conhecimento em várias linguagem de programação, html, css, javascript, React, Angular , Andorid, flutter e etc..'}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree ||
+                    'Amante de consoles e games cultura nerd geek e tecnologia digital .'}
                 </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphFour ||
+                    'Pai dos gatos mais maneiros e simpáticos do mundo que me proporciona novas idéias todo dia, Pai do Anthony a maior riqueza do mundo que deus me pode dar e casado com a mulher mais sincera e dedicada do mundo a soridente e mais amável Stefane Souza..'}
+                </p>
+                <p className="about-wrapper__info-text">
+                  {paragraphFive ||
+                    'Sou uma pessoa dedicada e disposta a novos desafios busco oportunidades de demonstrar meus conhecimentos adquiridos nesses anos de aprendizagem, sempre disposto a aprender e ensinar e me tornar mais capácitado.'}
+                </p>
+
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
@@ -56,7 +74,7 @@ const About = () => {
                       className="cta-btn cta-btn--resume"
                       href={resume}
                     >
-                      Resume
+                      Curriculum
                     </a>
                   </span>
                 )}
