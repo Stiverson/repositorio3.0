@@ -11,7 +11,7 @@ export const headData = {
 export const heroData = {
   title: '',
   name: 'Stiverson Machado',
-  subtitle: ' Analista e Desenvolvedor de Sistemas ',
+  subtitle: ' Desenvolvedor Full-Stack | React, Angular, Java, Python | Scrum Master | Expertise em Design de Produto | ',
   cta: '',
 };
 
